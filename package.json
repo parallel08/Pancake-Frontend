@@ -1,7 +1,7 @@
 {
   "name": "pancake-frontend",
   "version": "0.1.1",
-  "homepage": "https://parallel08.github.io/Pancake-Frontend/",
+  "homepage": "https://parallel08.github.io",
   "private": true,
   "workspaces": [
     "packages/*"
