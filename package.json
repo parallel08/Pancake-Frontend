@@ -1,7 +1,6 @@
 {
   "name": "pancake-frontend",
-  "version": "0.1.1",
-  "homepage": "https://parallel08.github.io",
+  "version": "0.1.0",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -11,9 +10,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "npm run build && next export && touch out/.nojekyll",
-    "serve": "npm run export && serve out",
-    "deploy": "npm run export && node gh-pages.js",
+    "export": "yarn build && next export && touch ./out/.nojekyll",
+    "serve": "yarn export && serve out",
+    "deploy": "yarn export && node gh-pages.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:config": "jest src/config/__tests__/ --testPathIgnorePatterns",
