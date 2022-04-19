@@ -102,3 +102,11 @@ const config = {
 }
 
 module.exports = withBundleAnalyzer(withSentryConfig(config, sentryWebpackPluginOptions))
+
+module.exports = {
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
+}
+
