@@ -12,7 +12,7 @@
     "start": "next start",
     "export": "yarn build && next export && touch ./out/.nojekyll",
     "serve": "yarn export && serve out",
-    "deploy": "yarn export && node gh-pages.js",
+    "deploy": "yarn export",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:config": "jest src/config/__tests__/ --testPathIgnorePatterns",
