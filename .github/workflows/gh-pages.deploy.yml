@@ -21,13 +21,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-          
-      - name: Install yarn
-        run: npm install -g yarn
-
       - name: Install project dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true' # Over here!
-        run: yarn
+        run: yarn install
       - name: Build project
         run: yarn build
       - name: Export static files
